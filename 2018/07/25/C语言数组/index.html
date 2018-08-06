@@ -97,7 +97,7 @@
 <meta property="og:site_name" content="kev的内存空间">
 <meta property="og:description" content="数组与指针 数组名就是这块连续内存单元的首地址。 1int num[50]; //num是数组名，也是数组的首地址。  num的值与 &amp;amp;num[0]的值是相同的  数组第i+1个元素可表示为： 第i+1个元素的地址： &amp;amp;num[i+1] || num + i + 1 第i+1个元素的值： num[i+1] || *(num + i + 1)   为指向数组的指针赋值： 12int">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-25T05:43:57.568Z">
+<meta property="og:updated_time" content="2018-07-26T07:21:56.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言数组">
 <meta name="twitter:description" content="数组与指针 数组名就是这块连续内存单元的首地址。 1int num[50]; //num是数组名，也是数组的首地址。  num的值与 &amp;amp;num[0]的值是相同的  数组第i+1个元素可表示为： 第i+1个元素的地址： &amp;amp;num[i+1] || num + i + 1 第i+1个元素的值： num[i+1] || *(num + i + 1)   为指向数组的指针赋值： 12int">
@@ -358,10 +358,13 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> * ptr_num = &amp;num[<span class="number">4</span>];</span><br><span class="line"><span class="keyword">int</span> * ptr_num = num + <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>###指针总结<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> * ptr_i = i;</span><br></pre></td></tr></table></figure></p>
+<p>###指针总结</p>
 <ol>
-<li>指针是一个变量，存储另一个变量（对象）的内存地址。</li>
-<li>指针的生命是由基本类型、 * 的内存地址。</li>
+<li><p>指针是一个变量，存储另一个变量（对象）的内存地址。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> * ptr_i = i;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>指针的生命是由基本类型、 * 的内存地址。</p>
+</li>
 <li>为指针赋值，赋值运算符右侧必须是一个地址。<ul>
 <li>如果是普通变量需要再前面加一个取地址运算符 &amp;。</li>
 <li>如果是另一个指针变量或者是一个数组， 不需要加 &amp;运算符。</li>
@@ -494,7 +497,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -601,7 +604,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共695字</span>
+  <span class="post-count">博客全站共1.1k字</span>
 </div>
 
         
